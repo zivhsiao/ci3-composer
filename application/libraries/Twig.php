@@ -22,10 +22,10 @@ class Twig
     }
  
     // CodeIgniterのoutputにTwigのrenderを渡す
-    public function out($template, $data=[])
+    public function output($template, $data=[])
     {
         $this->ci->output->set_output(
-            $this->twig->render($template, $data)
+            $this->twig->render($template . '.html', $data)
         );
     }
 }
