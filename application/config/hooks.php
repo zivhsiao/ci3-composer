@@ -17,12 +17,12 @@ $hook['post_controller_constructor'] = array(
     'filepath' => 'hooks'
 );
 
-$hook['display_override'][] = array(
-	'class'  	=> 'Develbar',
-    'function' 	=> 'debug',
-    'filename' 	=> 'Develbar.php',
-    'filepath' 	=> 'third_party/DevelBar/hooks'
-);
+// $hook['display_override'][] = array(
+// 	'class'  	=> 'Develbar',
+//     'function' 	=> 'debug',
+//     'filename' 	=> 'Develbar.php',
+//     'filepath' 	=> 'third_party/DevelBar/hooks'
+// );
 
 
 

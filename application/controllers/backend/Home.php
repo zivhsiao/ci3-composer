@@ -18,4 +18,5 @@ class Home extends CI_Controller {
 
 		$this->twig->output('backend/home/index', $result);
 	}
+
 }

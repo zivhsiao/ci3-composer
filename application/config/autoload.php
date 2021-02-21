@@ -42,7 +42,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $autoload['packages'] = array(APPPATH.'third_party/DevelBar');
 
-
 /*
 | -------------------------------------------------------------------
 |  Auto-load Libraries
@@ -60,7 +59,7 @@ $autoload['packages'] = array(APPPATH.'third_party/DevelBar');
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('database', 'session', 'twig', 'encryption', 'form_validation');
+$autoload['libraries'] = array('database', 'session', 'twig', 'encryption', 'form_validation', 'grocery_CRUD');
 
 
 /*
