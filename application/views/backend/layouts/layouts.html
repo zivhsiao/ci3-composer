@@ -9,13 +9,18 @@
         <title>Admin</title>
         <link href="{{ baseUrl }}assets/css/styles.css" rel="stylesheet" />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css' integrity='sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==' crossorigin='anonymous'/>
-
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' integrity='sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==' crossorigin='anonymous'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/localization/messages_zh_TW.min.js" integrity="sha512-OMvEz/fg5WM53pG8acvtNd979QFBbGI5sJVP0k0Gex3tMmFPUqg9Sdo9zy/86hyhDkNpCgxqZlm29U7XXZADXw==" 
         crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/editor/0.1.0/editor.css">
+        <script src="//cdn.jsdelivr.net/editor/0.1.0/editor.js"></script>
+        <script src="//cdn.jsdelivr.net/editor/0.1.0/marked.js"></script>
+
+    
 
     </head>
     <body class="sb-nav-fixed">
@@ -44,12 +49,12 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">工具</div>
-                            <a class="nav-link" href="{{ baseUrl }}backend/user">
+                            <a class="nav-link" href="{{ baseUrl }}backend/users">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tools"></i></div>
                                 使用者管理
                             </a>
                             <div class="sb-sidenav-menu-heading">寫作工具</div>
-                            <a class="nav-link" href="{{ baseUrl }}backend/category">
+                            <a class="nav-link" href="{{ baseUrl }}backend/categories">
                                 <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
                                 分類編輯    
                             </a>

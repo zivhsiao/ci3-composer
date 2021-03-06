@@ -2,16 +2,47 @@
 
 {% block content %}
     <div class="container-fluid">
-        <h1 class="mt-4">歡迎進入</h1>
-        <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">
-                歡迎進入
-            </li>
-        </ol>
-        <div class="card mb-4">
-            <div class="card-body">
-                {{ admin_user }}，歡迎您的進入
-            </div>
+        <div class="md-12">
+            {{ output|raw }}
         </div>
     </div>
+{% endblock %}
+
+{% block js %}
+<script>
+
+    $(function() {
+        var editor = new Editor({
+            element: $('.texteditor')[0]
+        });
+        editor.render();
+    
+        var editor2 = new Editor({
+            element: $('.texteditor')[1]
+        });
+        editor2.render();
+ 
+        $('.delete-anchor').on('click', function(){
+            delete_id = $(this).attr('id');
+            if(confirm('確定要刪除圖檔？')){
+                $('.upload-success-url').hide();
+                $('.fileinput-button').show();
+            }
+        })
+    
+        $('#save-and-go-back-button').hide();
+    })
+    
+ 
+    function delete_row(url, code){
+        if(confirm('確定要刪除嗎？')){
+            $.post(url, function(data){
+                location.reload();
+            })
+        }   
+    }
+
+    
+
+</script>
 {% endblock %}
