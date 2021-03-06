@@ -20,6 +20,11 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->twig->output('home');
+
+		$data = [
+			'posts' => $this->posts_model->get_all_data()
+		];
+
+		$this->twig->output('home', $data);
 	}
 }
