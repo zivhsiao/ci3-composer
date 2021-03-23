@@ -28,7 +28,7 @@ class Posts extends CI_Controller {
 			$crud->display_as('image','圖片');
 
             $crud->unset_clone();
-            $crud->unset_fields('created_at', 'updated_at', 'phone');
+            $crud->unset_fields('created_at', 'updated_at');
 			
 			$crud->columns('category_id','title');
             
